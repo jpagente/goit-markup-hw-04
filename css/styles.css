@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgba (255, 255, 255, 1);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    font-family: inherit;
+    border: unset;
+    outline: none;
+    cursor: pointer; 
+}
+address {
+    font-size: normal;
+} 
+:root {
+--iris: #4D5AE5;
+--ocean: #404BBF;
+--navy-blue: #2E2F42;
+--green: #31D0AA;
+--slate: #434455;
+--light-slate: #8E8F99;
+--cornflower: #E7E9FC;
+--cloud: #F4F4FD;
+--navy-blue-modal: #2E2F42;
+--grey :#2E2F42;
+--white :#FFFFFF;
+--dairy :#FCFCFC;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+.main-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--cornflower);
+    padding: 24px 0;
+}
+.nav {
+    display: inline-flex;
+    gap: 76px;
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+.nav-list-item-link { 
+    color: var(--navy-blue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+.nav-list-item-link:hover,
+.nav-list-item-link:focus,
+.address-list-item-link:hover,
+.address-list-item-link:focus,
+/* hw4 */
+.nav-list-item-link:hover::before {
+    color: var(--ocean);
+}
+.address-list-item-link {
+    color: var(--slate);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+.address-list {
+    display: flex;
+    gap: 40px;
+} 
+.hero {
+    background: var(--grey);
+    padding: 188px 0;
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('your-image-url.jpg');
+}
+.hero-heading {
+    background: var(--navyblue);
+    color: var(--white);
+    font-size: 56px;
+    line-height: 1.07143em;
+    letter-spacing: 1.12px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.hero-cta {
+    border-radius: 4px;
+    background: var(--iris);
+    color: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    padding: 16px 32px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.hero-cta:hover{
+background-color: var(--ocean);
+}
+.feature {
+    background-color: var(--white);
+    color: var(--navy-blue); 
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.feature-list {
+    display: flex;
+    gap: 24px;
+}
+.feature-text {
+    background-color: var(--white);
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+.sub-feature-text {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    width: 264px;
+}
+.product {
+    background-color: var(--white);
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+.product-header-text{
+    background-color: var(--white);
+    color: var(--slate);
+    font-size: 36px;
+    line-height: 1.111111em;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.product-list {
+    display: inline-flex;
+    margin-top: 72px;
+    gap: 24px;
+}
+.team {
+    background-color: var(--cloud);  
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-header-text-title {
+    color: var(--slate);
+    font-size: 36px;
+    line-height: 1.111111em;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.team-list-item{
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+                        0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-header-name {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-item-details {
+    padding:32px 16px
+}
+.team-item-position {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.portfolio-item-button {
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    color: var(--iris);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    padding: 12px 24px;
+}
+.portfolio-projects-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.project {
+    padding-bottom: 120px;
+}
+.section-projects-list{
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-project-list-item:nth-child(n+4) {
+    margin-top: 48px;
+}
+.project-item-details {
+    padding: 32px 16px;
+} 
+.section-project-list-item {
+    border: 1px solid var(--cornflower);
+    background: var(--white);
+}
+.section-project-header-text {
+    color: var(--navy-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+.section-project
+.sub-section-project-header-text {
+        font-size: 16px;
+        color: var(--slate);
+        line-height: 1.5em;
+        letter-spacing: 0.32px;
+}
+.portfolio-item-button:hover {
+    background: var(--ocean);
+    box-shadow:  0px 2px 2px 0px rgba(0, 0, 0, 0.12), 
+                            0px 2px 1px 0px rgba(0, 0, 0, 0.08), 
+                            0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--white);
+    border-color: var(--ocean);
+}
+.footer-text {
+    color: var(--cloud);
+    font-size: 16px;
+    line-height: 1.5em; 
+    letter-spacing: 0.32px;
+    text-align: left;
+    margin-top: 17.5px;
+}
+footer {
+    background: var(--navy-blue);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+}
+.span-web {
+    color: var(--iris);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16667em; 
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.span-studio {
+    color: var(--cloud);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16667em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}

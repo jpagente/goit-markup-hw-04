@@ -17,7 +17,7 @@ button {
     font-family: inherit;
     border: unset;
     outline: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 address {
     font-size: normal;
@@ -260,13 +260,14 @@ margin-bottom: 72px;
     gap: 24px;
 }
 .customer-list-icon-link  {
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
     border-radius: 4px;
     border: 1px solid var(--light-slate);
-    fill: currentColor;
-    padding: 16px, 32px;
+    /* padding: 16px, 32px; */
+    fill: var(--light-slate);
+
 }
 .portfolio {
     padding-top: 96px;

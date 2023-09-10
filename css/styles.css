@@ -22,6 +22,10 @@ button {
 address {
     font-size: normal;
 } 
+img {
+    display: block;
+    width: 100%;
+}
 :root {
 --iris: #4D5AE5;
 --ocean: #404BBF;
@@ -83,8 +87,6 @@ address {
 .nav-list-item:hover .nav-list-item-link {
     color: var(--ocean);
 }
-/* .nav-list-item-link:hover,
-.nav-list-item-link:focus, */
 .address-list-item-link:hover,
 .address-list-item-link:focus {
     color: var(--ocean);
@@ -164,7 +166,6 @@ background-color: var(--ocean);
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.4px;
-    /* margin-top: 8px; */
     margin-bottom: 8px;
 }
 .sub-feature-text {
@@ -323,19 +324,29 @@ margin-bottom: 72px;
     gap: 8px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 48px;
+    column-gap: 24px;
 }
-.section-project-list-item:nth-child(n+4) {
-    margin-top: 48px;
-}
+.section-project-list-item:nth-child(n+4) {}
+
 .project-item-details {
     padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: unset;
 } 
 .section-project-list-item {
-    border: 1px solid var(--cornflower);
     background: var(--white);
 }
+.section-project-list-item:hover
+.project-item-details {
+    border: unset;
+}
 .section-project-list-item:hover {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+                            0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border: 1px solid var(--cloud);
 }
 .section-project-header-text {
     color: var(--navy-blue);
